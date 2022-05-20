@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Home | Cove Catering</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-img-div">
+                    <img src="logo.png" alt="logo" class="logoImage" width="130px">
+                </div>
+
+                <div class="logo-text-div">
+                    <h1 class="logoHeading">Cove Catering</h1>
+                </div>
+            </div>
+
+            <ul class="nav-links" style="list-style-type: none;">
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+                <div class="menu">
+                    <li class="top"><a class="active" href="#">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#register" class="cta"><button><i class='bx bxs-phone'></i>&nbsp;Register</button></a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="rowh">
+        <div class="left">
+            <p class="sub-text">Award Wining Catering</p>
+            <h1 class="main-text">From Intimate to Extravagant</h1>
+            <p class="sub-text-1">We are the third generation following our father & grandfather at your service, with
+                experience of more than half century one can say at darbar you can got true picture of your
+                imaginations. Now exploring the term "Caterers & Decorators".Naturally you want the best for your event.
+                Darbar is here to understand and deliver your perfect event. Our unique pledge means that we are here to
+                provide you with impeccable service, sublime taste and perfect presentation</p>
+        </div>
+        <div class="right">
+            <img src="img2.jfif" alt="" width="410px">
+        </div>
+    </div>
+
+    <div id="menu" class="w3-padding-top-64">
+        <h1 class="w3-center menuH">Our Menu</h1>
+        <div class="w3-row">
+
+            <div class="w3-col l6 m6 w3-padding-large menuu">
+
+                <h4>Bread Basket</h4>
+                <p class="w3-text-grey">
+                    Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+
+                <h4>Belgian Waffle</h4>
+                <p class="w3-text-grey">
+                    Vanilla flavored batter with malted flour 7.50</p><br>
+
+                <h4>Scrambled eggs</h4>
+                <p class="w3-text-grey">
+                    Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+
+                <h4>Blueberry Pancakes</h4>
+                <p class="w3-text-grey">
+                    With syrup, butter and lots of berries 8.50</p>
+            </div>
+
+            <div class="w3-col l6 m6 w3-padding-large">
+                <img src="img4.jfif" id="menuImg" class="w3-round w3-image w3-opacity-min" alt="Menu"
+                    style="width:50%">
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="w3-padding-top-64">
+        <div class="w3-row">
+
+            <div class="w3-half w3-padding-large w3-hide-small">
+                <img src="img3.jfif" class="w3-round w3-image w3-opacity-min" id="aboutImg" alt="Table"
+                    style="width:50%">
+            </div>
+
+            <div class="w3-half w3-padding-large">
+                <h1 class="w3-center aboutH">About Catering</h1><br>
+                <h5 class="w3-center aboutSt">Tradition since 1889</h5>
+                <p class="w3-large aboutSt1">
+                    The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iure nisi laboriosam
+                    eaque tenetur, nobis sequi, placeat iste totam, maiores in blanditiis doloribus est vitae esse
+                    veniam at ratione. Ad, fugit saepe.</p>
+                <p class="w3-large w3-text-grey w3-hide-medium aboutSt2">
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna
+                    aliqua.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <section id="register">
+        <div class="main">
+            <h2 class="mmm">Registration</h2>
+
+            <form name="reg_form" id="myForm" onsubmit="validateform()">
+                <div style="margin: 50px;">
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" class="form-control " name="fullname" placeholder="Full Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" name="email" placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone (Enter only 11 digit numbers)</label>
+                        <input type="number" class="form-control" name="ph" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password</label>
+                        <input type="password" class="form-control" name="pwd" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="Confirmpwd">Confirm Password</label>
+                        <input type="password" class="form-control" name="Confirmpwd" placeholder=" Confirm Password">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" id="regBtn" class="btn btn-primary mb-2" name="submit"
+                            value="Register">Register</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
