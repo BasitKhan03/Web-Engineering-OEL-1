@@ -461,10 +461,6 @@ input[type=checkbox] {
     .sub-text {
         font-size: 14px;
     }
-
-    /* .sub-text1 {
-        display: none;
-    } */
 }
 
 @media (max-width: 400px) {
@@ -483,21 +479,6 @@ input[type=checkbox] {
     .sub-text {
         font-size: 14px;
     }
-
-    /* .sub-text1 {
-        display: none;
-    } */
-}
-
-@media (max-width: 290px) {
-    /* .sub-text {
-        display: none;
-    } */
-
-    /* .sub-text1 {
-        display: block;
-        font-size: 14px;
-    } */
 }
 
 #about {
